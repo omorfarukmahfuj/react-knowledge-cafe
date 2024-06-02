@@ -8,13 +8,13 @@ const Blogs = () => {
     fetch('blogs.json')
       .then(res => res.json())
       .then(data => console.log(data))
-}, [])
+  }, [])
 
-return (
-  <>
-
-  </ >
-);
+  return (
+    <div className="md:w-2/3">
+      <h2>Blogs</h2>
+    </div>
+  );
 };
 
 export default Blogs;
